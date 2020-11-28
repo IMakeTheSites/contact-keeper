@@ -10,13 +10,14 @@ import {
   LOGIN_FAIL,
   LOGOUT,
   CLEAR_ERRORS
-} from "../types";
+} from '../types';
 
 const AuthState = (props) => {
   const initialState = {
     token: localStorage.getItem('token'),
     isAuthenticated: null,
     loading: true,
+    user: null,
     error: null    
 };
 
@@ -47,4 +48,4 @@ const AuthState = (props) => {
   );
 };
 
-export default AuthState;
+export default AuthState
